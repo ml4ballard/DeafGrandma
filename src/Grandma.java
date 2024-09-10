@@ -1,14 +1,14 @@
 
 public class Grandma {
-	
-	System.out.println("In grandma");
-	System.out.println("Leaving grandma");
-	
 
-     public String grandmaResponds() {
-    	 String response = "";
-  //login to determine response
-    	 return response;
- }
- 
+//	public String grandmaResponds() {
+		
+		System.out.println("in grandma");
+		System.out.println("Leaving grandma");
+	
+		String response = " ";
+		return response;
+		
+ //}
+
 }
