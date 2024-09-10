@@ -1,18 +1,22 @@
 
 public class Grandma {
-	
-	  public String[] responses;
-	  public String question;
-	  
 
-	public String getResponse(String response) {
-		
-		System.out.println("in grandma");
-		System.out.println("Leaving grandma");
-	
-//		String response = " ";
-		return response;
-		
- }
+	String shoutArr[] = new String[3];
+	String respArr[] = new String[3];
+	String byeArr[] = new String[3];
+
+//	gmother.shout= 
+//	response=new String[3];
+//	byebye=new String[3];
+
+//	public String getResponse(String kidresponse) {
+
+//		System.out.println("in grandma");
+//		System.out.println("Leaving grandma");
+
+//	String response = " ";
+//	return kidresponse;
+
+// }
 
 }
