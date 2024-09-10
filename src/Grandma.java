@@ -1,15 +1,14 @@
 
 public class Grandma {
 	
-	public void or boolean maybe canGranmaHearYou(String phrase ) {
-		
-		return canSheHearYou;
-	}
-
-}
+	System.out.println("In grandma");
+	System.out.println("Leaving grandma");
+	
 
      public String grandmaResponds() {
     	 String response = "";
   //login to determine response
     	 return response;
-     }
+ }
+ 
+}
