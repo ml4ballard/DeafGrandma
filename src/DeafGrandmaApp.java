@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class DeafGrandmaApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		DeafGrandmaApp app = new DeafGrandmaApp();
 		app.launch();
@@ -16,27 +15,21 @@ public class DeafGrandmaApp {
 		Scanner kbinput = new Scanner(System.in);
 			
 		System.out.println("What do you want to say to grandma?");
-		kbinput.nextLine();
+		String kidresponse = kbinput.nextLine();
 
 		// instantiate grandma
-		
-		class Grandma {
-			String question;
-			String response;
-			
-		}
 		
 		Grandma gmother = new Grandma();
 		
 		// call grandma method here
 
-		// test call to grandma
-		
-		String response = Grandma();
+		// test call to grandma		
 
-		// close scanner and exit
+		gmother.getResponse(kidresponse);
+
+		// close scanner 
 		kbinput.close();
-		// all the login is going in here
+
 
 	}
 

@@ -1,14 +1,18 @@
 
 public class Grandma {
+	
+	  public String[] responses;
+	  public String question;
+	  
 
-//	public String grandmaResponds() {
+	public String getResponse(String response) {
 		
 		System.out.println("in grandma");
 		System.out.println("Leaving grandma");
 	
-		String response = " ";
+//		String response = " ";
 		return response;
 		
- //}
+ }
 
 }
