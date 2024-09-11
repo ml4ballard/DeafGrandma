@@ -5,10 +5,6 @@ public class Grandma {
 	String respArr[] = new String[3];
 	String byeArr[] = new String[3];
 
-//	gmother.shout= 
-//	response=new String[3];
-//	byebye=new String[3];
-
 //	public String getResponse(String kidresponse) {
 
 //		System.out.println("in grandma");

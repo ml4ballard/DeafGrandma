@@ -14,47 +14,64 @@ public class DeafGrandmaApp {
 
 		Scanner kbinput = new Scanner(System.in);
 
-		// instantiate grandma and add values
+//  grandma and initialize with responses, new grandma
 
 		Grandma gmother = new Grandma();
 
-//		Initialize all of the fields that for some reason are being kept in another file
-		gmother.shoutArr[0] = "ONE shout response";
-		gmother.shoutArr[1] = "TWO shout response";
-		gmother.shoutArr[2] = "Three shout response";
+// Initialize all of the grandma responses 
+		gmother.shoutArr[0] = "YOU LOOK GREAT";
+		gmother.shoutArr[1] = "I LIKE YOUR BROTHER BETTER";
+		gmother.shoutArr[2] = "USE THIS CREAM";
 
-		gmother.respArr[0] = "This really sucks";
-//    	gmother.shout = "What is the point of this all over the place";
+		gmother.respArr[0] = "CAN I BORROW MONEY";
+		gmother.respArr[1] = "LETS RUN AWAY";
+		gmother.respArr[2] = "SHUT UP AND GET IN THE TRUCK";
+		
+		gmother.byeArr[0] = "SMELL YOU LATER";
+		gmother.byeArr[1] = "GLAD THIS IS OVER";
+		gmother.byeArr[2] = "DONT LET THE DOOR HIT YOU WHERE THE GOOD LORD SPLIT YOU";
+		
+		String kidResponse = " ";
 
-//		gmother.response[2]= "TWO This really sucks";
-//		gmother.shout[2] = "TWO What is the point of this all over the place";	
-
-		System.out.println("this will never work");
-		System.out.println(gmother.shoutArr[0]);
-//		System.out.println(gmother.shout[2]);
-
+// Get user input and chat with grandma
+//		System.out.println("Kid response is" + kidResponse);
+			
+	
+	while ( !kidResponse.equals("GOODBYE") ) {
+	
 		System.out.println("What do you want to say to grandma?");
-		String kidresponse = kbinput.nextLine();
-
-		// call grandma method here
-
-		// test call to grandma
-
-//		gmother.getResponse(kidresponse);
-
+		kidResponse = kbinput.nextLine();
+		
+//		System.out.println("Kid response is" + kidResponse);
+		String kidUpper = kidResponse.toUpperCase();
+//		System.out.println("Kid upper is" + kidUpper);
+		
+		if ( (kidResponse.toUpperCase()).equals("GOODBYE")) {
+			int randomNum = ComputerRandom();
+			System.out.println(gmother.byeArr[randomNum]);
+			System.out.println();
+		}		
+		else if ( (kidResponse.toUpperCase()).equals(kidResponse)) {
+			int randomNum = ComputerRandom();
+			System.out.println(gmother.shoutArr[randomNum]);
+			System.out.println();
+		}
+		else if ( !(kidResponse.toUpperCase()).equals(kidResponse)) {
+			int randomNum = ComputerRandom();
+			System.out.println(gmother.respArr[randomNum]);
+			System.out.println();
+		}
+    } 
 		// close scanner
 		kbinput.close();
 
 	}
-
-	public String getResponse(String kidresponse) {
-
-		System.out.println("in grandma");
-		System.out.println("Leaving grandma");
-
-		String response = " ";
-		return kidresponse;
-
+	
+	public int ComputerRandom() {
+		int max = 2;
+		int min = 0;
+		int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+    	return randomNum;
 	}
 
 }
